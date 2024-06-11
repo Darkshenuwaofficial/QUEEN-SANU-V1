@@ -165,7 +165,7 @@ setTimeout(() => {
             
             var dev = [FranceKing, FranceKing1,FranceKing2,FranceKing3].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\t [][]...{FEENIX-MD-V5}...[][]");
+            console.log("\t [][]...{QUEEN SANU-MD}...[][]");
             console.log("=========== New message ===========");
             if (verifGroupe) {
                 console.log("message from the group : " + nomGroupe);
@@ -428,7 +428,7 @@ function mybotpic() {
                                    // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
                                     const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
                                     var sticker = new Sticker(gifLink, {
-                                        pack: 'Feenix-Md',
+                                        pack: 'sanu-Md',
                                         author: conf.OWNER_NAME,
                                         type: StickerTypes.FULL,
                                         categories: ['🤩', '🎉'],
@@ -526,7 +526,7 @@ function mybotpic() {
            // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
             const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
             var sticker = new Sticker(gifLink, {
-                pack: 'Feenix-Md',
+                pack: 'sanu-Md',
                 author: conf.OWNER_NAME,
                 type: StickerTypes.FULL,
                 categories: ['🤩', '🎉'],
@@ -663,14 +663,14 @@ zk.ev.on('group-participants.update', async (group) => {
     try {
         ppgroup = await zk.profilePictureUrl(group.id, 'image');
     } catch {
-        ppgroup = 'https://telegra.ph/file/5c889aa420243a1784cc5.jpg';
+        ppgroup = 'https://telegra.ph/file/4cc2712eee93c105f6739.jpg';
     }
 
     try {
         const metadata = await zk.groupMetadata(group.id);
 
         if (group.action == 'add' && (await recupevents(group.id, "welcome") == 'on')) {
-            let msg = `◇FEENIX-MD-V5◇
+            let msg = `◇DEXTER-MD◇
 `;
              
             let membres = group.participants;
@@ -688,11 +688,11 @@ zk.ev.on('group-participants.update', async (group) => {
 
 ${metadata.desc}
 
-📌Powred by *FEENIX King®🐐*`;
+📌Powred by *SANU King®🐐*`;
 
             zk.sendMessage(group.id, { image: { url: ppgroup }, caption: msg, mentions: membres });
         } else if (group.action == 'remove' && (await recupevents(group.id, "goodbye") == 'on')) {
-            let msg = ` *Goodbye Frinds group owner මෙත දැනුවත් කිරිමකි එක් පුද්ගලයෙක් group එකෙන් left උනා 🍁 [POWER BY FEENIX]*\n`;
+            let msg = ` *Goodbye Frinds group owner මෙත දැනුවත් කිරිමකි එක් පුද්ගලයෙක් group එකෙන් left උවා 📌 [POWER BY QUEEN SANU]*\n`;
 
             let membres = group.participants;
             for (let membre of membres) {
@@ -858,10 +858,10 @@ ${metadata.desc}
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
                 let cmsg = `
-*『FEENIX-MD-V5 is CONNECTED』*
+*『DEXTER-MD is CONNECTED』*
 
      
-║❒Creator: *FEENIX*
+║❒Creator: *QUEEN SANU*
 ║❒Prefix : [ ${prefixe} ]
 ║❒Mode :${md}
 ║❒Created on : *22.2.2024*
@@ -870,14 +870,14 @@ ${metadata.desc}
      ▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚
      ▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚
  
-║❒ _Join *FEENIX-MD* BOT GRUOP for Updates_
-https://chat.whatsapp.com/L0RchYxWA8x2Lft8riYxny
+║❒ _Join *SANU-MD* Channel for Updates_
+https://whatsapp.com/channel/0029VaOoODA65yDHLCqskX11_
 
-║❒ *CONTACT BOT DEVELOPER*
-https://wa.me/message/N7TZSLGQH2AKI1 
+║❒ *JOIN OUR WhatsApp Gʀᴏᴜᴘ*
+https://chat.whatsapp.com/KGtgYAU9Qv14v5iU0qBUbV 
 
 
-              *FEENIX-MD-V5*`;
+              *DEXTER-MD*`;
                 await zk.sendMessage(zk.user.id, { text: cmsg });
                 }
             }
