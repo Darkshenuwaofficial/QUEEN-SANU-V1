@@ -2,7 +2,7 @@
   "name": "QUEEN SANU-MD",
   "version": "1.0.0",
   "description": "",
-  "main": "media/feenix.js",
+  "main": "media/shenu.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "s": "node index.js",
